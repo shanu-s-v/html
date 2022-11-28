@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML FORM</title>
+	<link rel="stylesheet" type="text/css" href="htmllab1.css">
+</head>
+<body>
+	<form>
+		<h1>Registartion Form</h1>
+		<label for="name">Name:</label>
+		<input type="text" name="name" placeholder="Enter your name" maxlength="25" size="39" required><br><br>
+		<label for="email">Email:</label>
+		<input type="email" name="email" value="test@example.com" size="39" required autofocus><br><br>
+		<label for="pass">Password:</label>
+		<input type="password" name="pass" minlength="6" size="35" required><br><br>
+		<label for="Cate">Category:</label>
+		<select name="Cate" required>
+			<option>Student</option>
+			<option>Employee</option>
+			<option selected>Freelancer</option>	
+		</select><br><br>
+		<label for="event date">Event Date:</label>
+		<input type="date" name="event date" required><br><br>
+		<label for="tickets">Tickets:</label>
+		<input type= "radio" name="ticket" value="1 Ticket">1 Ticket
+		<input type= "radio" name="ticket" value="2 Tickets" checked>2 Tickets
+		<input type= "radio" name="ticket" value="3 Tickets">3 Tickets<br><br>
+		<label for="payment">Payment:</label>
+		<input type="checkbox" name="online" required>Online payment<br><br>
+		Notes:
+		<br/>
+        <textarea rows="8" cols="40" name= "description" placeholder="Please enter your notes here"></textarea /><br><br>
+        <input type="submit" value="submit">
+	</form>
+</body>
+</html>
